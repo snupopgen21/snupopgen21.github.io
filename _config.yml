@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 
 # Config for your profile.
 title:            2021학년도 SNU 집단유전체학연구실 실습 페이지            # Site title
-name:             popgen21            # Your name
+name:             SNU POPGEN            # Your name
 avatar:           /theme/img/choongwonjeong.jpg   # Path to an avatar image
 
 # The theme uses the baseurl throughout, which is useful for running the entire
