@@ -5,7 +5,7 @@ narrow: true
 title: 서울대학교 집단유전체학 연구실 조교 실습 페이지
 ---
 
-## What is it?
+## 환영합니다!
 
 {% include components/intro.md %}
 
