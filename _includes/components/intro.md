@@ -1,6 +1,6 @@
 
 
-이 웹페이지는 서울대학교 생명과학부 학부 과목인 OO 의 2021학년도 1학기 실습 목적으로 만들어졌습니다.
+이 웹페이지는 서울대학교 생명과학부 학부 과목인 생명과학전공실험1(001,002,007,008)의 2021학년도 1학기 실습 목적으로 만들어졌습니다.
 
 
 *<center><i class="fas fa-quote-left" style="color:#A593E0;"></i><span style="color:gray">&nbsp;&nbsp;&nbsp;&nbsp;소개 글 같은걸 써주시면 반영해서 수정하겠습니다!&nbsp;&nbsp;&nbsp;&nbsp;</span><i class="fas fa-quote-right" style="color:#A593E0;"></i></center>*
@@ -15,5 +15,7 @@
 2. Delineating the genetic basis of complex adaptive phenotypes in natural populations
 3. Understanding the role of genetic variation in human health and phenotypic diversity
 
-조교 연락처: <headjokyo@snu.ac.kr>
-
+조교 연락처:
+박미진(<m002468@snu.ac.kr>, 002/008)
+이주현(<ljh4270@snu.ac.kr>, 001/008)
+정현재(<wjdguswo1234@snu.ac.kr>, 002/007)
