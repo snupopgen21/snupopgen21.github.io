@@ -15,7 +15,7 @@
 2. Delineating the genetic basis of complex adaptive phenotypes in natural populations
 3. Understanding the role of genetic variation in human health and phenotypic diversity
 
-조교 연락처:
-박미진(<m002468@snu.ac.kr>, 002/008)
-이주현(<ljh4270@snu.ac.kr>, 001/008)
-정현재(<wjdguswo1234@snu.ac.kr>, 002/007)
+조교 연락처:  
+박미진(<m002468@snu.ac.kr>, 002/008)  
+이주현(<ljh4270@snu.ac.kr>, 001/008)  
+정현재(<wjdguswo1234@snu.ac.kr>, 002/007)  
