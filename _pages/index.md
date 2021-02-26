@@ -2,7 +2,7 @@
 layout: defaults/page
 permalink: index.html
 narrow: true
-title: 서울대학교 집단유전체학 연구실 조교 실습 페이지
+title: POPGEN 연구실습
 ---
 
 ## 환영합니다!
