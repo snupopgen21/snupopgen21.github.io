@@ -1,5 +1,5 @@
 ---
-title: How to write code, with syntax highlighting
+title: 코드 들어간 포스트 예시
 tags:
   - syntax highlighting
   - code

@@ -1,7 +1,6 @@
 ---
-title:  How to use Single Images
+title:  이미지 들어간 포스트 예시
 tags:
-  - Friday Theme
   - HTML
   - images
   - Markdown

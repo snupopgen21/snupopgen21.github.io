@@ -17,5 +17,6 @@ title: POPGEN 연구실습
 {% include components/post-card.html %}
 {% endfor %}
 
+
 It is maintained by Namwon Kim on [GitHub](https://github.com/snupopgen21/snupopgen21.github.io).
 
