@@ -1,31 +1,73 @@
-title: jekyll-rtd-theme
-description: Just another documentation theme compatible with GitHub Pages
+# Outputting
+permalink: /:categories/:year/:month/:day/:title.html
 
-theme: null
+# Conversion
+markdown:         kramdown
+highlighter:      rouge
+excerpt_separator: <!--more-->
 
-# debug:
-#   compress: true
-#   dist: false
-#   shortcodes: true
+# Config for your profile.
+title:            2021학년도 SNU 집단유전체학연구실 실습 페이지            # Site title
+name:             SNU POPGEN            # Your name
+avatar:           /theme/img/choongwonjeong.jpg   # Path to an avatar image
 
-readme_index:
-  with_frontmatter: true
+# The theme uses the baseurl throughout, which is useful for running the entire
+# site under a subdir, like for this GitHub Pages deployment as a project site.
+baseurl: "/snupopgen21.github.io"
 
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
+# Add a directory to hold misc pages, just to keep the root directory clean.
+include: ["_pages", "_portfolio"]
 
-exclude:
-  - Makefile
-  - CNAME
-  - LICENSE
-  - update.sh
-  - Gemfile
-  - Gemfile.lock
-  - requirements.txt
-  - node_modules
-  - package.json
-  - package-lock.json
-  - webpack.config.js
-  - jekyll-rtd-theme.gemspec
+# Wire in the SASS files in the theme directory.
+sass:
+  sass_dir: theme/_sass
+  style: compressed
+
+# Turn the projects into a collection.
+collections:
+  projects:
+    output: true
+    title: Projects
+    permalink: /:collection/:name.html
+  portfolio:
+    output: true
+    title: portfolio
+    permalink: /:collection/:name.html
+
+defaults:
+# Turn the profile sidebar on for all pages by default, except for the
+# collections, where it is off and replaced by useful things on the sidebar.
+# To override this one a page, use
+#    show_profile: false
+# to hide the profile.
+  -
+    scope:
+      path: ""
+    values:
+      show_profile: true
+  -
+    scope:
+      path: "_posts"
+    values:
+      show_profile: false
+      layout: defaults/post
+  -
+    scope:
+      path: "_portfolio"
+    values:
+      show_profile: false
+      layout: defaults/portfolio
+  -
+    scope:
+      path: "_projects"
+    values:
+      show_profile: false
+      layout: defaults/project
+  -
+    scope:
+      path: "list"
+    values:
+      show_profile: false
+      layout: defaults/list
+
+
