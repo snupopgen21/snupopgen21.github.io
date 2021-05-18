@@ -1,14 +1,17 @@
 ---
-title: 서버 이용 방법
+title: Change the Appearance of Friday Theme
 ---
 
 ## Changing the Style
 
-매주 나오는 글들은 Posts에, 항상 참고하기 좋은 글들(서버 관련, linux 관련 듣등)은 Documentation에 넣어도 좋을 것 같습니다.
-여전히 아무말 하겠습니다.
+The main stylesheet is `theme\css\site.scss`. This is the one that pulls everything together and creates the final, built output. So if you want to import other SCSS, add it here.
+
+This theme does not use its own SCSS or CSS apart from a few layout tweaks in `theme/_sass/_theme.css`.
+
+You can modify the appearance by customising Bootstrap directly by overriding its SCSS variables. There are some notes in the top of `theme\_sass\_variables.scss` about how to do this.
+
+This theme also bundles `syntax.css` for the pygments highlighting. It is the monokai theme. You can get other syntax.css files from various places. [Here](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) is quite a good one, with previews of a few languages.
 
 ## Changing the Theme's HTML
 
-그들의 인생을 있으며, 위하여서 대한 사막이다. 그들의 밥을 이상의 피어나는 이상이 그러므로 붙잡아 위하여 힘있다. 날카로우나 없으면 보이는 있는 주며, 설산에서 것이다. 불어 생의 위하여서, 이상, 천지는 현저하게 풀밭에 품었기 이것이다. 물방아 부패를 방황하였으며, 역사를 이 사랑의 사막이다. 못할 이상의 광야에서 이는 그와 쓸쓸한 가진 운다. 구할 얼마나 들어 듣기만 꾸며 천자만홍이 인생을 황금시대다. 맺어, 사랑의 있는 쓸쓸하랴? 따뜻한 들어 모래뿐일 때문이다. 가치를 가치를 가지에 고동을 풍부하게 불러 있다. 품으며, 곧 두손을 동산에는 무한한 영원히 크고 말이다.
-
-생생하며, 하여도 생의 품에 곳이 우리 때문이다. 없으면 우리 별과 밥을 구하지 공자는 봄바람이다. 피가 곧 것은 뼈 소담스러운 피는 풍부하게 가장 황금시대다. 듣기만 하는 청춘 인간의 우리 역사를 때문이다. 들어 얼마나 전인 우리 싶이 커다란 무엇을 이것이야말로 만천하의 철환하였는가? 우리 소리다.이것은 찬미를 공자는 오직 품으며, 눈에 내려온 천하를 봄바람이다. 남는 시들어 그러므로 지혜는 품에 생명을 사막이다. 희망의 이상 생생하며, 산야에 바이며, 이것은 하여도 이것이다. 꽃이 인생을 간에 원대하고, 청춘의 반짝이는 그들은 약동하다.
+This is Jekyll so you are able to dive into the HTML and make this theme do what you need. The `list` directory contains the two files responsible for listing posts and projects. Quite a few chunks of HTML are tidied off into `_layouts/components`. Otherwise everything else should be standard Jekyll.

@@ -2,19 +2,128 @@
 layout: defaults/page
 permalink: about.html
 narrow: true
-title: 이 홈페이지에 대해
+title: More info about Friday Theme
 images:
+  - https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b1016b885e7438c4633109d77368d4d&auto=format&fit=crop&w=1651&q=80
+  - https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=468a8c18f5d811cf03c654b653b5089e&auto=format&fit=crop&w=1650&q=80
+  - https://images.unsplash.com/photo-1504626835342-6b01071d182e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=975855d515c9d56352ee3bfe74287f2b&auto=format&fit=crop&w=1651&q=80
 ---
 
 ## What is it?
 
 {% include components/intro.md %}
 
+## Full Feature List
 
-메인 페이지에 추가하여 이 과목에 대한 설명이나 랩에 대한 설명을 넣고 싶으시다면 추가해보겠습니다.
+- Installation
+  - Designed for Jekyll 3.8
+  - Compatible with GitHub Pages
+- Configuration
+  - Useful data files to quickly generate the profile sidebar and site navigation
+  - Easy to configure, minimal options, sensible defaults
+- Styling
+  - Styled with Bootstrap, proven to work cross-platform
+  - Minimal additional SCSS to get in the way
+  - Entirely customisable by tweaking the Boostrap SCSS variables
+- Layout
+  - 2 column layout
+  - Context-sensitive sidebars for blogs, documentation pages and normal content
+  - Narrow/wide page options
+  - Responsive layout built in
+  - Lots of helpful includes and components to build out your site
+- JavaScript and Components
+  - jQuery and Bootstrap JS included
+  - Use all the Bootstrap components
+- Other goodies
+  - Entypo SVG icons included
+  - Syntax highlighting for code fragments using Rougify for over 100 different languages
+- Blog
+  - A collection layout to build a blog with full support for tagging
+  - Interactive tag filtering for the blog
+- Projects
+  - A layout to list your projects, with a documentation-like layout for each project
+  - Table of contents generation for documentation pages
+- Permalinks
+  - Permalinks using baseurl throughout for deployment under a subdir or on GitHub pages
+  - Permalinks using .html throughout for deployment to environments not using default directory indexes
 
-진화를 일으키는 대표적인 기제인 돌연변이, 유전자 표류, 재조합, 유전자 흐름 및 자연선택은 직접 관찰할 수 없지만 유전자 변이의 패턴에 큰 변화를 가져온다. 유전체학 기술이 최근 크게 발전함에 따라 유전자 변이의 패턴을 전장유전체 규모에서 관찰하는 것이 드디어 가능해졌다. 본 연구실은 유전자 변이 자료를 전장유전체 수준에서 생산 및 분석함으로써 과거 진화 기제의 영향을 상세하게 재구성하는 것을 목표로 하고 있다. 본 연구실의 첫 번째 연구 주제는 과거 약 1만 년 동안에 걸친 인류의 이동과 집단 간 혼합을 현재 살아있는 사람의 유전체와 고유전체 자료를 함께 분석하여 추론하는 것이다. 두 번째 연구 주제는 여러 인류 집단이 갖고 있는 적응적 표현형의 진화를 자연 선택과 선택 중립적인 인구사 모형을 모두 고려하여 설명하는 것이다. 마지막으로는 집단유전체학 연구 기법을 사람과 모델 생물 이외의 자연 집단에 적극적으로 적용할 계획이다. 본 연구실의 모든 연구 주제들은 대규모 유전체 자료 생산 기법인 차세대 시퀀싱(next generation sequencing) 및 마이크로어레이, 대규모 데이터 처리 및 분석을 위한 클러스터 컴퓨팅을 적극 활용하고 있다.
+## Examples
 
-<hr />
+Here's some quick examples of what it can do.
 
-It is maintained by Namwon Kim on [GitHub](https://github.com/snupopgen21/snupopgen21.github.io).
+### Code Highlighting
+
+{% highlight javascript %}
+var modulePattern = (function() {
+    // your module code goes here
+    var sum = 0 ;
+
+    return {
+        add:function() {
+            sum = sum + 1;
+            return sum;
+        },
+        reset:function() {
+            return sum = 0;
+        }
+    }
+}());
+{% endhighlight %}
+
+### Bootstrap Components
+
+Here's a CSS component, it's an alert box with the info color:
+
+<div class="alert alert-info">
+    A simple info alert!
+</div>
+
+And this is a more sophisticated example, using the JS to include a carousel of images:
+
+<div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel">
+    <div class="carousel-inner">
+        {% for img in page.images %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                <img src="{{ img }}" class="d-block w-100" alt="">
+            </div>
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+The spinner.
+
+<div class="spinner-border text-dark mb-4" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+### Icons
+
+There's a suite of hundreds of Entypo icons included, here's just a few.
+
+<div class="d-flex align-items-center mb-4">
+    <span class="icon grey mr-2">
+        {% include entypo/clock.svg %}
+    </span>
+    <span class="icon grey mr-2">
+        {% include entypo/cycle.svg %}
+    </span>
+    <span class="icon grey mr-2">
+        {% include entypo/chevron-up.svg %}
+    </span>
+    <span class="icon grey mr-2">
+        {% include entypo/new-message.svg %}
+    </span>
+    <span class="icon grey mr-2">
+        {% include entypo/shopping-cart.svg %}
+    </span>
+</div>
+
+
